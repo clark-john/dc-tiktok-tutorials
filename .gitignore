@@ -1,1 +1,6 @@
 *__pycache
+click/examples.bak
+
+# Vim swap files
+
+*.swp
