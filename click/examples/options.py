@@ -12,7 +12,6 @@ from click import (
 def run(color):
   secho("Hello", fg=color)
 
-
 # multiple values in one option
 
 @command()
@@ -20,7 +19,6 @@ def run(color):
 def run(fbg):
   fg, bg = fbg
   secho("Hello", fg=fg, bg=bg)
-
 
 # multiple options
 
@@ -30,7 +28,6 @@ def run(txt):
   for x in txt:
     print(x)
 
-
 # option repetition
 
 @command()
@@ -38,8 +35,6 @@ def run(txt):
 def run(verbose):
   for x in range(verbose):
     print(x)
-
-
 
 # Boolean options
 
@@ -69,7 +64,6 @@ def run(exponent):
   else:
     print("Ten cubed")
 
-
 # choice options
 
 @command()
@@ -94,7 +88,6 @@ class JavaHelloWorld {
   else:
     print("puts Hello World")
 
-
 # prompting
 
 @command()
@@ -105,7 +98,6 @@ def run(numbers):
   for x in range(numbers):
     e.append(x)
   print(e)
-
 
 # password
 
@@ -124,7 +116,6 @@ def run(password):
   else:
     secho("Wrong password", bold=True, fg='red')
 
-
 # dynamic defaults for prompts
 from platform import system
 
@@ -136,8 +127,6 @@ from platform import system
 )
 def run(system):
   secho("You're using "+system+' as of now.', fg='bright_yellow')
-
-
 
 # callback and eager options
 
@@ -176,8 +165,6 @@ def if_false(ctx, param, value):
 def run():
   secho("Settings successfully has been reset.", fg='bright_green')
 
-
-
 # other prefix
 
 # example 1
@@ -199,9 +186,6 @@ def run(pos):
   print('X position:',x)
   print('Y position:',y)
 
-
-
-
 # range options:
 
 @command()
@@ -212,7 +196,6 @@ def run(pos):
 )
 def run(number):
   print(number)
-
 
 # optional value
 
