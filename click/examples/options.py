@@ -31,7 +31,7 @@ def run(txt):
 # option repetition
 
 @command()
-@option('-v','--verbose',count=True)
+@option('-v','--verbose', count=True)
 def run(verbose):
   for x in range(verbose):
     print(x)
@@ -209,5 +209,5 @@ def run(number):
 def run(quiz):
   print(quiz)
 
-# if __name__ == '__main__':
-  # run()
+if __name__ == '__main__':
+  run()
